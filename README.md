@@ -1,17 +1,83 @@
-# React + Vite
+# LeaveFlow — Leave Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack Leave Management System built with React, Express.js, PostgreSQL (Neon), and TailwindCSS.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Live Demo
 
-## React Compiler
+- Frontend: https://leaveflow-frontend-seven.vercel.app/
+- Backend API: https://leaveflow-backend-l4wo.onrender.com/
+- API Docs: https://leaveflow-backend-l4wo.onrender.com/api-docs/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# leaveflow-frontend
+### Frontend
+
+- React (Vite)
+- TailwindCSS
+- Axios
+- React Router
+- Lucide Icons
+
+### Backend
+
+- Node.js
+- Express.js
+- PostgreSQL (Neon)
+- JWT Authentication
+- Swagger API Docs
+
+---
+
+## Features
+
+### Authentication
+
+- User registration & login
+- JWT-based authentication
+- Persistent sessions
+
+### Leave Management
+
+- Create leave requests
+- View personal leave history
+- Status tracking (Pending / Approved / Rejected)
+
+### Admin Panel
+
+- View all requests
+- Approve or reject requests
+- Role-based access control
+
+### UI/UX
+
+- Modern glassmorphism UI
+- Responsive design
+- Loading states
+- Toast notifications
+
+---
+
+## Roles
+
+- **Employee**
+  - Create leave requests
+  - View own requests
+
+- **Admin**
+  - Manage all leave requests
+  - Approve / reject requests
+
+---
+
+## Installation
+
+### Frontend
+
+```bash
+npm install
+npm run dev
+```
