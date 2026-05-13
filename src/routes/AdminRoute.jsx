@@ -3,25 +3,14 @@ import { Navigate } from "react-router-dom";
 import { Loader2 } from "lucide-react";
 
 import { useAuth } from "../context/AuthContext";
+import FullPageLoader from "../components/FullPageLoader";
 
 const AdminRoute = ({ children }) => {
   const { user, authLoading } = useAuth();
 
   // Wait for auth loading
   if (authLoading) {
-    return (
-      <div
-        className="
-          min-h-screen
-          bg-slate-950
-          flex
-          items-center
-          justify-center
-        "
-      >
-        <Loader2 size={40} className="animate-spin text-white" />
-      </div>
-    );
+    return <FullPageLoader />;
   }
 
   // Not logged in
